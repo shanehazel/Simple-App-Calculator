@@ -52,7 +52,6 @@ while True:
                 def float_to_fraction(number):
                     return Fraction(number).limit_denominator()
                 print("Your number is", "\033[1;36;40m ==========", float_to_fraction(float(operation_division)), "!", "\033[1;36;40m ==========")
-
         # ask the user if they want to calculate again
 
         # if no, break the loop
