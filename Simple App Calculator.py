@@ -7,6 +7,7 @@ while True:
     input_operation = input(str("\033[0;33;40m Choose one operation (Addition, Subtraction, Multiplication, Division): "))
 
     # check if the inputs are the given operations
+    if input_operation.upper() in ("ADDITION","SUBTRACTION", "MULTIPLICATION", "DIVISION"):
         
         # see if the user inputted the correct value
 
