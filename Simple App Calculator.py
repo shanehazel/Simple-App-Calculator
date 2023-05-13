@@ -39,9 +39,12 @@ while True:
             
             # ask the user if they want the form, decimal or fraction
             division_method = input("\033[0;33;40m Please choose a format (Decimal/Fraction): ")
-            
-            # make division operation with decimal answer
 
+            # make division operation with decimal answer
+            if division_method.upper() == "DECIMAL":
+                operation_division = input_number1 / input_number2
+                print("Your number is", "\033[1;36;40m ==========", operation_division, "!", "\033[1;36;40m ==========")
+                
             # make division operation with fraction answer
 
         # ask the user if they want to calculate again
