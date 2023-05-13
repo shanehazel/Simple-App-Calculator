@@ -44,8 +44,14 @@ while True:
             if division_method.upper() == "DECIMAL":
                 operation_division = input_number1 / input_number2
                 print("Your number is", "\033[1;36;40m ==========", operation_division, "!", "\033[1;36;40m ==========")
-                
+
             # make division operation with fraction answer
+            elif division_method.upper() == "FRACTION":
+                operation_division = float(input_number1) / float(input_number2)
+                from fractions import Fraction
+                def float_to_fraction(number):
+                    return Fraction(number).limit_denominator()
+                print("Your number is", "\033[1;36;40m ==========", float_to_fraction(float(operation_division)), "!", "\033[1;36;40m ==========")
 
         # ask the user if they want to calculate again
 
