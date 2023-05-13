@@ -25,6 +25,9 @@ while True:
             print("Your number is", "\033[1;36;40m ==========", operation_addition, "!", "\033[1;36;40m ==========")
 
         # make subtraction operation
+        elif input_operation.upper() == "SUBTRACTION":
+            operation_subtraction = input_number1 - input_number2
+            print("Your number is", "\033[1;36;40m ==========", operation_subtraction, "!", "\033[1;36;40m ==========")
         
         # make multiplication operation
 
