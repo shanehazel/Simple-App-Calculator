@@ -62,3 +62,5 @@ while True:
                 break
         
     # make the user input again if they inputted wrong string
+    else:
+        print("\033[1;31;40m Oops! Choose only one here (Addition, Subtraction, Multiplicaiton, Division).")
