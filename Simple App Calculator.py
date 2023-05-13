@@ -30,6 +30,9 @@ while True:
             print("Your number is", "\033[1;36;40m ==========", operation_subtraction, "!", "\033[1;36;40m ==========")
         
         # make multiplication operation
+        elif input_operation.upper() == "MULTIPLICATION":
+            operation_multiplication = input_number1 * input_number2
+            print("Your number is", "\033[1;36;40m ==========", operation_multiplication, "!", "\033[1;36;40m ==========")
 
         # make division operation
 
