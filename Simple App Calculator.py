@@ -1,7 +1,8 @@
 # pseudocode
 
 # make a loop for trying the program again option
-
+while True:
+    
     # ask user for their desired operation
 
     # check if the inputs are the given operations
