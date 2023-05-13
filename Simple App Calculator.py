@@ -52,8 +52,13 @@ while True:
                 def float_to_fraction(number):
                     return Fraction(number).limit_denominator()
                 print("Your number is", "\033[1;36;40m ==========", float_to_fraction(float(operation_division)), "!", "\033[1;36;40m ==========")
-        # ask the user if they want to calculate again
 
+        # ask the user if they want to calculate again
+        input_tryagain = input(str("\033[0;33;40m Do you want to try again? (Yes or No): "))
+        
         # if no, break the loop
-    
+        if input_tryagain.upper() == "NO":
+                print("\033[1;36;40m Thank you!")
+                break
+        
     # make the user input again if they inputted wrong string
