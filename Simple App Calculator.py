@@ -18,8 +18,11 @@ while True:
         except ValueError:
             print("\033[1;31;40m Oops! Try inputting numbers only.")
             continue
-        
+
         # make addition operation
+        if input_operation.upper() == "ADDITION":
+            operation_addition = input_number1 + input_number2
+            print("Your number is", "\033[1;36;40m ==========", operation_addition, "!", "\033[1;36;40m ==========")
 
         # make subtraction operation
         
