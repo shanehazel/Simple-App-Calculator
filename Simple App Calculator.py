@@ -10,9 +10,15 @@ while True:
     if input_operation.upper() in ("ADDITION","SUBTRACTION", "MULTIPLICATION", "DIVISION"):
         
         # see if the user inputted the correct value
+        try:
+            input_number1 = float(input("\033[3;34;40m Enter your first number: "))
+            input_number2 = float(input("\033[3;32;40m Enter your second number: "))
 
         # if not, print the error phrase and will make the user type values again
-
+        except ValueError:
+            print("\033[1;31;40m Oops! Try inputting numbers only.")
+            continue
+        
         # make addition operation
 
         # make subtraction operation
