@@ -2,8 +2,9 @@
 
 # make a loop for trying the program again option
 while True:
-    
+
     # ask user for their desired operation
+    input_operation = input(str("\033[0;33;40m Choose one operation (Addition, Subtraction, Multiplication, Division): "))
 
     # check if the inputs are the given operations
         
